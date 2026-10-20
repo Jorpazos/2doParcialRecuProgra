@@ -1,0 +1,1 @@
+-- DDL: solo tablas y datos, sin procedures ni triggers (se completa en su paso)
