@@ -6,6 +6,18 @@
 
     <display-name>Publicidad</display-name>
 
+    <!-- Los servlets los registro con @WebServlet (anotaciones), menos este:
+         el LogoutServlet lo registro aca, en el web.xml -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>ar.edu.usal.publicidad.web.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- La sesion se cierra sola a los 30 minutos sin uso -->
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
